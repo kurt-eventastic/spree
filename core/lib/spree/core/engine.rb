@@ -62,8 +62,8 @@ module Spree
       end
 
       initializer "spree.mail.settings" do |app|
-        Spree::Core::MailSettings.init
-        Mail.register_interceptor(Spree::Core::MailInterceptor)
+        #Spree::Core::MailSettings.init
+        #Mail.register_interceptor(Spree::Core::MailInterceptor)
       end
 
       # We need to define promotions rules here so extensions and existing apps
